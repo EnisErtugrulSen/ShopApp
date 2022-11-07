@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
-import { CategoryCreateComponent } from './category-create/category-create.component';
+import { CategoryCreateComponent } from './categories/category-create/category-create.component';
 import { AdminGuard } from './guards/admin-guard';
 import { HomeComponent } from './home/home.component';
 import { ProductCreateComponent } from './products/product-create/product-create.component';
