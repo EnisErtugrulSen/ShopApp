@@ -8,16 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CKEditorModule } from 'ckeditor4-angular';
-import { AuthComponent } from './auth/auth.component';
 import { ProductsModule } from './products/products.module';
 import { CategoriesModule } from './categories/categories.module';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AuthComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +25,8 @@ import { CategoriesModule } from './categories/categories.module';
     FormsModule,
     CKEditorModule,
     ProductsModule,
-    CategoriesModule
+    CategoriesModule,
+    AuthenticationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
