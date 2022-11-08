@@ -3,11 +3,12 @@ import { Injectable } from "@angular/core";
 import { Observable, map, tap, delay, take, exhaustMap } from "rxjs";
 import { Product } from "./product.model";
 import { AuthService } from "../authentication/auth.service";
+import { environment } from "src/environments/environment";
 
 // local service
 @Injectable()
 export class ProductService {
-    private url = "https://ng-shopapp-d4ef5-default-rtdb.firebaseio.com/";
+    private url = environment.database_url;
 
     constructor(
         private http: HttpClient, 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { AuthService } from '../../authentication/auth.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.authService.user.subscribe(user => {
       this.isAuthenticated = !!user; 
-      this.isAdmin = user?.email == "info@sadikturan.com"
+      this.isAdmin = user?.email == environment.adminEmail
     })
   }
 
